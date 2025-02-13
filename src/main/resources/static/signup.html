@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Railway Reservation System</title>
+  <script type="text/javascript" src="validate.js"></script>
+  <style>
+    body {
+      padding: 25px;
+    }
+    .title {
+      color: #5C6AC4;
+    }
+    table {
+      width: 50%;
+      margin: auto;
+      background-color: #99F5FF;
+      padding: 20px;
+      border-radius: 10px;
+    }
+    td {
+      padding: 10px;
+    }
+    select, input[type="text"], input[type="submit"], input[type="reset"] {
+      padding: 5px;
+      margin: 5px 0;
+      width: 100%;
+    }
+  </style>
+</head>
+<body>
+  <form action="#" name="RailwayReservationSystem" onsubmit="return validate();">
+    <table cellpadding="2">
+      <tr>
+        <td colspan="2">
+          <center><font size="4"><b>Railway Reservation System</b></font></center>
+        </td>
+      </tr>
+      <tr>
+        <td>From</td>
+        <td><input type="text" name="from" id="from" size="30"></td>
+      </tr>
+      <tr>
+        <td>To</td>
+        <td><input type="text" name="to" id="to" size="30"></td>
+      </tr>
+      <tr>
+        <td>Train No/Name</td>
+        <td><input type="text" name="trainno" id="trainno" size="30"></td>
+      </tr>
+      <tr>
+        <td>Class</td>
+        <td>
+          <select name="class">
+            <option value="-1" selected>Select</option>
+            <option value="SL">SL</option>
+            <option value="3A">3A</option>
+            <option value="2A">2A</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>No. of Seats</td>
+        <td>
+          <select name="no_of_seats">
+            <option value="-1" selected>Select</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Passenger 1 Name</td>
+        <td><input type="text" name="p1" size="30"></td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td><input type="text" name="age1" size="2"></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <select name="gender1">
+            <option value="M">M</option>
+            <option value="F">F</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Passenger 2 Name</td>
+        <td><input type="text" name="p2" size="30"></td>
+      </tr>
+      <tr>
+        <td>Age</td>
+        <td><input type="text" name="age2" size="2"></td>
+      </tr>
+      <tr>
+        <td>Gender</td>
+        <td>
+          <select name="gender2">
+            <option value="M">M</option>
+            <option value="F">F</option>
+            <option value="F">Other</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td>Address</td>
+        <td><input type="text" name="address" id="address" size="50"></td>
+      </tr>
+      <tr>
+        <td>Payment Mode</td>
+        <td>
+          <input type="radio" name="paymentmode" value="credit/debit card"> Credit/Debit card
+          <input type="radio" name="paymentmode" value="wallet/upi"> Wallet/UPI
+          <input type="radio" name="paymentmode" value="netbanking"> NetBanking
+        </td>
+      </tr>
+      <tr>
+        <td>Mobile No.</td>
+        <td><input type="text" name="mobileno" id="mobileno" size="30"></td>
+      </tr>
+      <tr>
+        <td><input type="reset"></td>
+        <td colspan="2">
+          <input type="submit" value="Submit Form">
+          <input type="button" value="Cancel" onclick="window.location.reload();">
+        </td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
